@@ -1,5 +1,5 @@
 # check-tool [![Build Status](https://travis-ci.org/vyarmak/check-tool.svg?branch=master)](https://travis-ci.org/vyarmak/check-tool)
-Simple set of tools to check variables / properties
+Tired of passing it from project to project - put this simple set of tools to check variables / properties into a package.
 
 # Install
 
