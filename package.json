@@ -1,0 +1,30 @@
+{
+  "name": "check-tool",
+  "version": "1.0.0",
+  "description": "Simple set of tools to check variables / properties",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vyarmak/check-tool.git"
+  },
+  "keywords": [
+    "check",
+    "tool",
+    "undefined",
+    "isdefined",
+    "isnotnull"
+  ],
+  "author": "Viktor Yarmak <viktor.yarmak@yarmakconsulting.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vyarmak/check-tool/issues"
+  },
+  "homepage": "https://github.com/vyarmak/check-tool#readme",
+  "devDependencies": {
+    "standard": "^10.0.2",
+    "tape": "^4.6.3"
+  }
+}
