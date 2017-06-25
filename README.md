@@ -1,5 +1,5 @@
 # check-tool [![Build Status](https://travis-ci.org/vyarmak/check-tool.svg?branch=master)](https://travis-ci.org/vyarmak/check-tool)
-Tired of passing it from project to project - put this simple set of tools to check variables / properties into a package.
+Tired of passing it from project to project - put this simple set of functions to check variables into a package. Includes check of undefined / defined / defined and not null / defined and not empty / is number / is function is object
 
 # Install
 
