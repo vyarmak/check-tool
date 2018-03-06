@@ -4,15 +4,35 @@ var isDefined = function (param) {
   return typeof param !== 'undefined'
 }
 
+/**
+ * @deprecated will be changed in favor of isNotNull()
+ * @param {Any} param 
+ */
 var isDefinedAndNotNull = function (param) {
-  return (isDefined(param) && param !== null)
+  return isNotNull(param);
 }
 
 var isDefinedAndNotEmpty = function (param) {
   return (isDefinedAndNotNull(param) && param !== '')
 }
 
+var isNotNull = function (params) {
+  return (isDefined(param) && param !== null);
+}
+
+var isEmpty = function (params) {
+  return typeof param === 'undefined' || param === null || param == '';
+}
+
+/**
+ * @deprecated will be changed in favor of isNotNaN()
+ * @param {Any} param 
+ */
 var isDefinedAndNotNaN = function (param) {
+  return isNotNaN(param);
+}
+
+var isNotNaN = function (param) {
   return (isDefinedAndNotNull(param) && !isNaN(param))
 }
 
@@ -35,5 +55,8 @@ module.exports = {
   isDefinedAndNotNaN: isDefinedAndNotNaN,
   isObject: isObject,
   isFunction: isFunction,
-  isNumber: isNumber
+  isNumber: isNumber,
+  isEmpty: isEmpty,
+  isNotNaN: isNotNaN,
+  isNotNull: isNotNull
 }

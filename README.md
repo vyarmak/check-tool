@@ -16,15 +16,19 @@ if (checkTool.isDefined(varaiable)) {
 	// do something...
 }
 
-if (checkTool.isDefinedAndNotNull(varaiable)) {
+if (checkTool.isNotNull(varaiable)) {
 	// do something...
 }
 
-if (checkTool.isDefinedAndNotEmpty(varaiable)) {
+if (checkTool.isNotEmpty(varaiable)) {
 	// do something...
 }
 
-if (checkTool.isDefinedAndNotNaN(varaiable)) {
+if (checkTool.isEmpty(varaiable)) {
+	// do something...
+}
+
+if (checkTool.isNotNaN(varaiable)) {
 	// do something...
 }
 

@@ -14,9 +14,10 @@ test('check-tool', function (t) {
   }
   t.equals(checkTool.isDefined(varUndefined), false, 'passed')
   t.equals(checkTool.isDefined(varEmptyString), true, 'passed')
-  t.equals(checkTool.isDefinedAndNotNull(varNull), false, 'passed')
-  t.equals(checkTool.isDefinedAndNotEmpty(varEmptyString), false, 'passed')
-  t.equals(checkTool.isDefinedAndNotNaN(NaN), false, 'passed')
+  t.equals(checkTool.isNotNull(varNull), false, 'passed')
+  t.equals(checkTool.isNotEmpty(varEmptyString), false, 'passed')
+  t.equals(checkTool.isEmpty(varEmptyString), true, 'passed')
+  t.equals(checkTool.isNotNaN(NaN), false, 'passed')
   t.equals(checkTool.isObject(varEmptyString), false, 'passed')
   t.equals(checkTool.isFunction(varObject), false, 'passed')
   t.equals(checkTool.isNumber(varEmptyString), false, 'passed')
