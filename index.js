@@ -16,11 +16,11 @@ var isDefinedAndNotEmpty = function (param) {
   return (isDefinedAndNotNull(param) && param !== '')
 }
 
-var isNotNull = function (params) {
+var isNotNull = function (param) {
   return (isDefined(param) && param !== null);
 }
 
-var isEmpty = function (params) {
+var isEmpty = function (param) {
   return typeof param === 'undefined' || param === null || param == '';
 }
 
