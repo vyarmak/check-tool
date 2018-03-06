@@ -1,6 +1,6 @@
 {
   "name": "check-tool",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Simple set of functions to check variables. Includes check of undefined / defined / defined and not null / defined and not empty / is number / is function is object",
   "main": "index.js",
   "scripts": {

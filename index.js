@@ -1,7 +1,7 @@
 'use strict'
 
 var isDefined = function (param) {
-  return typeof param !== 'undefined'
+  return typeof param !== 'undefined';
 }
 
 /**
@@ -12,8 +12,24 @@ var isDefinedAndNotNull = function (param) {
   return isNotNull(param);
 }
 
+/**
+ * @deprecated will be changed in favor of isNotNaN()
+ * @param {Any} param 
+ */
+var isDefinedAndNotNaN = function (param) {
+  return isNotNaN(param);
+}
+
+/**
+ * @deprecated will be changed in favor of isNotEmpty()
+ * @param {Any} param 
+ */
 var isDefinedAndNotEmpty = function (param) {
-  return (isDefinedAndNotNull(param) && param !== '')
+  return isNotEmpty(param);
+}
+
+var isNotEmpty = function (param) {
+  return (isDefinedAndNotNull(param) && param !== '');
 }
 
 var isNotNull = function (param) {
@@ -22,14 +38,6 @@ var isNotNull = function (param) {
 
 var isEmpty = function (param) {
   return typeof param === 'undefined' || param === null || param == '';
-}
-
-/**
- * @deprecated will be changed in favor of isNotNaN()
- * @param {Any} param 
- */
-var isDefinedAndNotNaN = function (param) {
-  return isNotNaN(param);
 }
 
 var isNotNaN = function (param) {
@@ -57,6 +65,7 @@ module.exports = {
   isFunction: isFunction,
   isNumber: isNumber,
   isEmpty: isEmpty,
+  isNotEmpty: isNotEmpty,
   isNotNaN: isNotNaN,
   isNotNull: isNotNull
 }
